@@ -74,8 +74,5 @@ public class MemberController {
     public String sayHi(){
         return "Hello World !";
     }
-    @GetMapping(value = "Dashboard")
-    public String sayhello(){
-        return "Hello EveryOne !\n !";
-    }
+
     }
