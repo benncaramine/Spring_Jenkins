@@ -55,7 +55,7 @@ public class MemberController {
             throw new CustomException("Member with ID: '" + member.getId() + "' not found.");
         }
     }
-/*
+
     @DeleteMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CustomResponse> removeMember(@PathVariable("id") long id) {
         if (memberService.getMemberById(id).isPresent()) {
@@ -68,7 +68,7 @@ public class MemberController {
                     new CustomResponse(HttpStatus.NOT_FOUND.value(),
                             "Member with ID: '" + id + "' not found."), HttpStatus.NOT_FOUND);
         }
-    }*/
+    }
     @GetMapping(value = "/hello")
     public String sayHi(){
         return "Hello World !";
