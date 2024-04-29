@@ -74,5 +74,5 @@ public class MemberController {
     public String sayHi(){
         return "Hello World !";
     }
-
+    // Test
     }
